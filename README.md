@@ -1,5 +1,5 @@
 # Three Digits Combination Lock FSM
-This is a three digit combination lock system with "365" as the password. At the first state, if the number inputted is 3, it will move to the second state, else return to the starting state. At the second state, if the number inputted is 6, it will move to the third state, else return to the starting state. At the third state, if the number inputted is 5, the lock will be openned, else return to the starting state.
+This is a three digit combination lock system with "365" as the password. At the first state, if the number inputted is 3, it will move to the second state, else return to the starting state. At the second state, if the number inputted is 6, it will move to the third state, else return to the starting state. At the third state, if the number inputted is 5, the lock will be openned, else return to the starting state. After that, any number inputted will bring the system back to the starting state.
 
 ## FSM Model
 Ps: 3 : 011; 
