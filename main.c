@@ -149,5 +149,6 @@ int main(void) {
     calcNextState(p0, p1, input, n0, n1);
     calcOutput(p0, p1, output);
 }
+  
 return 0;
 }
