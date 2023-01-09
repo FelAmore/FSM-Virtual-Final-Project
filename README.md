@@ -32,4 +32,4 @@ Here are the equations formed from each K-map above
 ![Space N = 1000](images/optimizedo.png)
 
 ## System Simulation in C
-![Space N = 1000](images/visualization.mov)
+![Space N = 1000](images/visualization.gif)
