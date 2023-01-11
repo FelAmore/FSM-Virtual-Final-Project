@@ -1,11 +1,11 @@
-void calcNextState(int p0, int p1, int input, int n0, int n1) {
+void calcNextState(int s0, int s1, int b0, int b1, int* n0, int* n1) {
     // obtained from kmap 
-    n0 = ((!p0) & p1 & input) | (p0 & (!p1) & input);
-    n1 = ((!p1) & input);
+    *n0 = ((!s0) & s1 & (!b0) & b1) | (s0 & (!s1) & b0 & (!b1));
+    *n1 = ((!s0) & (!s1) & (!b0) & (!b1)) | (s0 & (!s1) & b0 & (!b1));
 }
 
-void calcOutput(int p0, int p1, int output) {
+void calcOutput(int s0, int s1, int* o1) {
     // the output as in the lock got openned
     // obtained from kmap
-    output = (p0 & p1);
+    *o1 = (s0 & s1);
 }
