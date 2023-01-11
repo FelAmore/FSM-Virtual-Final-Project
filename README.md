@@ -4,9 +4,9 @@ This is a three digit combination lock system with "123" as the password. At the
 ## FSM Model
 ![fsm-model](images/fsm-model.png)
 Inputs explained:
-00 = 1
-01 = 2
-10 = 3
+00 = 1\n
+01 = 2\n
+10 = 3\n
 11 = 0
 
 ## State and Transition Table
@@ -24,8 +24,8 @@ Here are the K-map for the next states and output
 
 ## Combinatorial Boolean Equations from Kmap
 Here are the equations formed from each K-map above:
-N0 = !S0S1!b0b1 + S0!S1b0!b1
-N1 = !S0!S1!b0!b1 + S0!S1b0!b1
+N0 = !S0S1!b0b1 + S0!S1b0!b1\n
+N1 = !S0!S1!b0!b1 + S0!S1b0!b1\n
 O1 = S0S1
 
 ## System Simulation in C
